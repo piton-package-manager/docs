@@ -33,7 +33,7 @@ To uninstall a package, simply run:
 piton uninstall <package_name>
 ```
 
-### Updating Packages
+## Updating Packages
 
 To update a package, simply change the version of the package in your package.json file and then run:
 ```
@@ -50,4 +50,45 @@ You can add custom scripts to your package.json file and you can run them runnin
     "deploy": "git push origin master"
   }
 ```
+
+## Version Control 
+
+Add the following to your package.json file for your version control details
+
+```
+"repository": {
+  "type": "<TYPE>",
+  "url": "<REPO_URL>"
+}
+```
+
+## Issue Tracking
+
+Piton supports Gitlab, Githuba and Jira issue trackers. First add your issue tracker to the package.json file:
+```
+"bugs": {
+  "url": "https://github.com/nodejitsu/browsenpm.org/issues"
+}
+```
+
+To browse all issues run:
+```
+piton issues
+```
+
+To browse issues assigned to you run:
+```
+piton issues --assignee me
+```
+
+To browse through issues assigned to someone else run:
+```
+piton issues --assigne <username>
+```
+
+To filter issues run:
+```
+piton issues --filter <search_term>
+```
+
 
