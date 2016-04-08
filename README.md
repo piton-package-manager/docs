@@ -33,6 +33,13 @@ To uninstall a package, simply run:
 piton uninstall <package_name>
 ```
 
+### Updating Packages
+
+To update a package, simply change the version of the package in your package.json file and then run:
+```
+pip install
+```
+
 ## User Defined Scripts
 
 You can add custom scripts to your package.json file and you can run them running `piton <script_name>`
