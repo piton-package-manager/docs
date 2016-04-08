@@ -62,33 +62,33 @@ Add the following to your package.json file for your version control details
 }
 ```
 
-## Issue Tracking
+## Bug Tracking
 
-Piton supports Gitlab, Githuba and Jira issue trackers. First add your issue tracker to the package.json file:
+Piton supports Gitlab, Githuba and Jira bug trackers. First add your issue tracker to the package.json file:
 ```
 "bugs": {
   "url": "https://github.com/nodejitsu/browsenpm.org/issues"
 }
 ```
 
-To browse all issues run:
+To browse all bugs run:
 ```
-piton issues
-```
-
-To browse issues assigned to you run:
-```
-piton issues --assignee me
+piton bugs
 ```
 
-To browse through issues assigned to someone else run:
+To browse bugs assigned to you run:
 ```
-piton issues --assigne <username>
+piton bugs --assignee me
 ```
 
-To filter issues run:
+To browse through bugs assigned to someone else run:
 ```
-piton issues --filter <search_term>
+piton bugs --assigne <username>
+```
+
+To filter bugs run:
+```
+piton bugs --filter <search_term>
 ```
 
 
