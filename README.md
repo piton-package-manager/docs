@@ -5,6 +5,7 @@ Piton is a python package manager modelled after NPM. Piton makes it easier for 
 - Piton keeps track of your development dependecies
 - Piton keeps track of production dependecies
 - Piton allows you to define project specific scripts (for testing, deploying, etc.)
+- Piton integrates with Gitlab, Github, and Jira bug trackers
 
 ## Getting Started
 
